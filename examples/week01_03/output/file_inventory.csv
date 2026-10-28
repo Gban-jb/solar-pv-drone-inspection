@@ -1,0 +1,13 @@
+kind,path,status,format,width,height,capture_time_raw,gps_latitude,gps_longitude,camera_make,camera_model,temperature_status,row_count,columns,size_bytes,sha256,missing_fields,error
+rgb,rgb/broken_image.jpg,error,,,,,,,,,,,,16,9ef327d0b1d5b3720059066c96f1948d37673e1c5929529a9232fe3e6d3bb6f6,,UnidentifiedImageError: cannot identify image file '/Users/mac/Documents/Solar_PV/examples/week01_03/inspection/rgb/broken_image.jpg'
+rgb,rgb/synthetic_rgb_01.jpg,warning,JPEG,480,300,2026:10:22 10:01:00,,,Synthetic Sample,"Drawing, not a camera",,,,13995,05e4a0915eed484a21c10ed4bab0103afa7db65d897a437bb93aa27d94bbeeae,gps,
+rgb,rgb/synthetic_rgb_02.jpg,warning,JPEG,480,300,,,,Synthetic Sample,"Drawing, not a camera",,,,13899,77a8c7b349c20ab6405331c6c1046256b4cd8ed4d2fa2e3db3930f321995a335,capture_timestamp; gps,
+rgb,rgb/synthetic_rgb_03.jpg,warning,JPEG,480,300,2026:10:22 10:03:00,,,Synthetic Sample,"Drawing, not a camera",,,,13889,3b952b2269a7685d711265c3dd9c33470d2b1172cde7ff6efd97f20d486c845d,gps,
+rgb,rgb/synthetic_rgb_04.jpg,warning,JPEG,480,300,,,,Synthetic Sample,"Drawing, not a camera",,,,13847,166e5ca221a14f5f81448937db48bcbe0570053400738ec51647af82578788ef,capture_timestamp; gps,
+rgb,rgb/synthetic_rgb_05.jpg,warning,JPEG,480,300,2026:10:22 10:05:00,,,Synthetic Sample,"Drawing, not a camera",,,,13860,bd036c3c6b03cf6dff4f89839dbac86539ed0a5b6a4400d00dba9611d45646ae,gps,
+rgb,rgb/synthetic_rgb_06.jpg,warning,JPEG,480,300,,,,Synthetic Sample,"Drawing, not a camera",,,,13778,a7a5e3467b2cbae39c24b7c6fb21c9c825ecd2f3868c31838c429cf6e08d5e6a,capture_timestamp; gps,
+thermal,thermal/synthetic_display_only_01.png,warning,PNG,480,300,,,,,,not_checked,,,1484,435de372d4351f2a0d0949924d4e8b54e80be9d918db179c1c612a5e5d48a335,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_display_only_02.png,warning,PNG,480,300,,,,,,not_checked,,,1481,1bfadb20bd78dbc5d1c14ea02768f738f4d7efaf47ed6c1c5594bc21242e2656,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_display_only_03.png,warning,PNG,480,300,,,,,,not_checked,,,1483,d1d695e6ac926c7c840550c1e75327382596fa9c140049bb706536155b98c781,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_display_only_04.png,warning,PNG,480,300,,,,,,not_checked,,,1484,7901c936dc0234d6c466cb081b9f9e0a802e19693b66ea55a197b24e8b31f019,capture_timestamp; gps; camera_model,
+scada,scada/synthetic_inverter.csv,ok,,,,,,,,,,12,timestamp_utc; inverter_id; power_kw; irradiance_w_m2,568,fbc7f5b3dfe79b35fe620bffe025f6e2c75e432af4063b10750ea834aa620cfc,,

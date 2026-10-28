@@ -1,0 +1,289 @@
+{
+  "schema_version": "0.1",
+  "inspection_id": "inspection",
+  "source_root": "/Users/mac/Documents/Solar_PV/examples/week01_03/inspection",
+  "scanned_at_utc": "2026-10-23T16:40:37.900004+00:00",
+  "summary": {
+    "images_found": 11,
+    "images_opened": 10,
+    "image_errors": 1,
+    "scada_files_found": 1,
+    "scada_files_opened": 1
+  },
+  "folder_issues": [],
+  "images": [
+    {
+      "kind": "rgb",
+      "path": "rgb/broken_image.jpg",
+      "status": "error",
+      "size_bytes": 16,
+      "sha256": "9ef327d0b1d5b3720059066c96f1948d37673e1c5929529a9232fe3e6d3bb6f6",
+      "missing_fields": [],
+      "error": "UnidentifiedImageError: cannot identify image file '/Users/mac/Documents/Solar_PV/examples/week01_03/inspection/rgb/broken_image.jpg'",
+      "format": null,
+      "width": null,
+      "height": null,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": null,
+      "camera_model": null,
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_01.jpg",
+      "status": "warning",
+      "size_bytes": 13995,
+      "sha256": "05e4a0915eed484a21c10ed4bab0103afa7db65d897a437bb93aa27d94bbeeae",
+      "missing_fields": [
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": "2026:10:22 10:01:00",
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_02.jpg",
+      "status": "warning",
+      "size_bytes": 13899,
+      "sha256": "77a8c7b349c20ab6405331c6c1046256b4cd8ed4d2fa2e3db3930f321995a335",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_03.jpg",
+      "status": "warning",
+      "size_bytes": 13889,
+      "sha256": "3b952b2269a7685d711265c3dd9c33470d2b1172cde7ff6efd97f20d486c845d",
+      "missing_fields": [
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": "2026:10:22 10:03:00",
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_04.jpg",
+      "status": "warning",
+      "size_bytes": 13847,
+      "sha256": "166e5ca221a14f5f81448937db48bcbe0570053400738ec51647af82578788ef",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_05.jpg",
+      "status": "warning",
+      "size_bytes": 13860,
+      "sha256": "bd036c3c6b03cf6dff4f89839dbac86539ed0a5b6a4400d00dba9611d45646ae",
+      "missing_fields": [
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": "2026:10:22 10:05:00",
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "rgb",
+      "path": "rgb/synthetic_rgb_06.jpg",
+      "status": "warning",
+      "size_bytes": 13778,
+      "sha256": "a7a5e3467b2cbae39c24b7c6fb21c9c825ecd2f3868c31838c429cf6e08d5e6a",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps"
+      ],
+      "error": null,
+      "format": "JPEG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": "Synthetic Sample",
+      "camera_model": "Drawing, not a camera",
+      "temperature_status": null
+    },
+    {
+      "kind": "thermal",
+      "path": "thermal/synthetic_display_only_01.png",
+      "status": "warning",
+      "size_bytes": 1484,
+      "sha256": "435de372d4351f2a0d0949924d4e8b54e80be9d918db179c1c612a5e5d48a335",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps",
+        "camera_model"
+      ],
+      "error": null,
+      "format": "PNG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": null,
+      "camera_model": null,
+      "temperature_status": "not_checked"
+    },
+    {
+      "kind": "thermal",
+      "path": "thermal/synthetic_display_only_02.png",
+      "status": "warning",
+      "size_bytes": 1481,
+      "sha256": "1bfadb20bd78dbc5d1c14ea02768f738f4d7efaf47ed6c1c5594bc21242e2656",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps",
+        "camera_model"
+      ],
+      "error": null,
+      "format": "PNG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": null,
+      "camera_model": null,
+      "temperature_status": "not_checked"
+    },
+    {
+      "kind": "thermal",
+      "path": "thermal/synthetic_display_only_03.png",
+      "status": "warning",
+      "size_bytes": 1483,
+      "sha256": "d1d695e6ac926c7c840550c1e75327382596fa9c140049bb706536155b98c781",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps",
+        "camera_model"
+      ],
+      "error": null,
+      "format": "PNG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": null,
+      "camera_model": null,
+      "temperature_status": "not_checked"
+    },
+    {
+      "kind": "thermal",
+      "path": "thermal/synthetic_display_only_04.png",
+      "status": "warning",
+      "size_bytes": 1484,
+      "sha256": "7901c936dc0234d6c466cb081b9f9e0a802e19693b66ea55a197b24e8b31f019",
+      "missing_fields": [
+        "capture_timestamp",
+        "gps",
+        "camera_model"
+      ],
+      "error": null,
+      "format": "PNG",
+      "width": 480,
+      "height": 300,
+      "capture_time_raw": null,
+      "gps_latitude": null,
+      "gps_longitude": null,
+      "camera_make": null,
+      "camera_model": null,
+      "temperature_status": "not_checked"
+    }
+  ],
+  "scada": [
+    {
+      "kind": "scada",
+      "path": "scada/synthetic_inverter.csv",
+      "status": "ok",
+      "size_bytes": 568,
+      "sha256": "fbc7f5b3dfe79b35fe620bffe025f6e2c75e432af4063b10750ea834aa620cfc",
+      "missing_fields": [],
+      "error": null,
+      "columns": [
+        "timestamp_utc",
+        "inverter_id",
+        "power_kw",
+        "irradiance_w_m2"
+      ],
+      "row_count": 12,
+      "empty_cells": {
+        "timestamp_utc": 0,
+        "inverter_id": 0,
+        "power_kw": 0,
+        "irradiance_w_m2": 0
+      },
+      "preview_rows": [
+        {
+          "timestamp_utc": "2026-10-22T10:00:00Z",
+          "inverter_id": "INV-DEMO-01",
+          "power_kw": "78.0",
+          "irradiance_w_m2": "560"
+        },
+        {
+          "timestamp_utc": "2026-10-22T10:01:00Z",
+          "inverter_id": "INV-DEMO-01",
+          "power_kw": "79.5",
+          "irradiance_w_m2": "571"
+        },
+        {
+          "timestamp_utc": "2026-10-22T10:02:00Z",
+          "inverter_id": "INV-DEMO-01",
+          "power_kw": "81.0",
+          "irradiance_w_m2": "582"
+        }
+      ]
+    }
+  ]
+}

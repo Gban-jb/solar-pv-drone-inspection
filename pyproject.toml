@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solar-pv-inspection"
+version = "0.1.0"
+description = "Student 1 solar PV drone inspection prototype"
+requires-python = ">=3.12"
+dependencies = [
+    "Pillow>=11,<14",
+    "pandas>=2.2,<4",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.40,<2"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+solar-pv-import = "solar_pv.ingestion.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
