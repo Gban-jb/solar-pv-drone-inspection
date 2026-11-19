@@ -1,0 +1,10 @@
+# Streamlit Community Cloud installs from this file.
+#
+# Installing the project itself (rather than listing dependencies again)
+# keeps the versions in pyproject.toml as the single source of truth, and
+# puts the src/ layout's `solar_pv` package on the import path so
+# `from solar_pv.ui.theme import ...` resolves.
+#
+# The [ui] extra adds Streamlit and the drawable-canvas component the
+# annotator page uses.
+.[ui]
