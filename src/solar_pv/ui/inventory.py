@@ -18,8 +18,10 @@ EXAMPLE = PROJECT_ROOT / "examples/week01_03/inspection"
 st.set_page_config(page_title="Solar PV inspection", layout="wide")
 st.header("Inspection inventory")
 
-folder_text = st.text_input("Inspection folder", value=str(EXAMPLE))
+folder_text = st.text_input("Inspection folder", value=str(st.session_state.get("active_inspection_root", EXAMPLE)))
 folder = Path(folder_text).expanduser()
+if folder.resolve() != EXAMPLE.resolve() or "active_inspection_root" in st.session_state:
+    st.session_state["active_inspection_root"] = str(folder.resolve())
 if folder.resolve() == EXAMPLE.resolve():
     st.caption("Synthetic demonstration files. No site or radiometric measurements.")
 

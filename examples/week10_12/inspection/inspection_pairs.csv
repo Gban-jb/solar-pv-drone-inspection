@@ -1,0 +1,5 @@
+inspection_id,pair_id,rgb_path,thermal_path,temperature_path,alignment_reviewed
+SYN-20261020-01,synthetic_case_01,rgb/synthetic_case_01.png,thermal/synthetic_case_01.png,temperature_grids/synthetic_case_01.json,true
+SYN-20261020-01,synthetic_case_02,rgb/synthetic_case_02.png,thermal/synthetic_case_02.png,temperature_grids/synthetic_case_02.json,true
+SYN-20261020-01,synthetic_case_03,rgb/synthetic_case_03.png,thermal/synthetic_case_03.png,temperature_grids/synthetic_case_03.json,true
+SYN-20261020-01,nonradiometric_color_only,rgb/nonradiometric_color_only.png,thermal/nonradiometric_color_only.png,temperature_grids/nonradiometric_color_only.json,true

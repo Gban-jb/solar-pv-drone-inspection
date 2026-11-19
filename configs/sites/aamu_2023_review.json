@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "site_id": "AAMU",
+  "site_name": "Alabama A&M Solar Project",
+  "address": "4900 Meridian St N, Huntsville, AL 35811",
+  "latitude_dms": "34°47'9.70\"N",
+  "longitude_dms": null,
+  "design_status": "review_drawing_unverified",
+  "source": {
+    "path": "research/source/aamu_60pct_review_2023-05-08.pdf",
+    "sha256": "d3cd19a953e30e0a18620803bfe747a20f56a4ec8f85af54874e2ee5598c1902",
+    "issue_date": "2023-05-08",
+    "issue_label": "60% ISSUED FOR REVIEW",
+    "not_for_construction": true
+  },
+  "module": {
+    "model": "JA Solar JAM72D30 545/MB",
+    "stc_w": 545,
+    "count": 2538
+  },
+  "strings": {
+    "count": 94,
+    "modules_per_string": 27
+  },
+  "inverter": {
+    "model": "Chint CPS SCA125KTL-DO/US-600",
+    "ac_rating_kw": 125,
+    "count": 8
+  },
+  "system": {
+    "dc_rating_w": 1383210,
+    "ac_rating_kw": 1000,
+    "array_azimuth_deg": 180,
+    "module_tilt_deg": 20,
+    "interconnection_kv": 12.47
+  },
+  "inverter_strings": [
+    {"drawing_id": "INV.01", "string_count": 12, "source_sheet": "WP101.2"},
+    {"drawing_id": "INV.02", "string_count": 12, "source_sheet": "WP101.2"},
+    {"drawing_id": "INV.03", "string_count": 12, "source_sheet": "WP101.2"},
+    {"drawing_id": "INV.04", "string_count": 12, "source_sheet": "WP101.2"},
+    {"drawing_id": "INV.05", "string_count": 12, "source_sheet": "WP101.1"},
+    {"drawing_id": "INV.06", "string_count": 12, "source_sheet": "WP101.1"},
+    {"drawing_id": "INV.07", "string_count": 11, "source_sheet": "WP101.1"},
+    {"drawing_id": "INV.08", "string_count": 11, "source_sheet": "WP101.1"}
+  ],
+  "rack_groups": [
+    {"modules_high": 2, "modules_wide": 108, "count": 5, "source_sheet": "WI101"},
+    {"modules_high": 2, "modules_wide": 81, "count": 5, "source_sheet": "WI101"},
+    {"modules_high": 2, "modules_wide": 54, "count": 6, "source_sheet": "WI101"}
+  ]
+}

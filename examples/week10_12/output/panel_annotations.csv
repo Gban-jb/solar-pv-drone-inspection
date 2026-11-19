@@ -1,0 +1,13 @@
+annotation_id,image_path,target_type,asset_id,x_min,y_min,x_max,y_max,image_width,image_height,created_at_utc,review_status
+syn-01-1,rgb/synthetic_case_01.png,panel,SYN-01-P01,0.08,0.2,0.3,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-01-2,rgb/synthetic_case_01.png,panel,SYN-01-P02,0.39,0.2,0.61,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-01-3,rgb/synthetic_case_01.png,panel,SYN-01-P03,0.7,0.2,0.92,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-02-1,rgb/synthetic_case_02.png,panel,SYN-02-P01,0.08,0.2,0.3,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-02-2,rgb/synthetic_case_02.png,panel,SYN-02-P02,0.39,0.2,0.61,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-02-3,rgb/synthetic_case_02.png,panel,SYN-02-P03,0.7,0.2,0.92,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-03-1,rgb/synthetic_case_03.png,panel,SYN-03-P01,0.08,0.2,0.3,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-03-2,rgb/synthetic_case_03.png,panel,SYN-03-P02,0.39,0.2,0.61,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-03-3,rgb/synthetic_case_03.png,panel,SYN-03-P03,0.7,0.2,0.92,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-color-1,rgb/nonradiometric_color_only.png,panel,SYN-COLOR-P01,0.08,0.2,0.3,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-color-2,rgb/nonradiometric_color_only.png,panel,SYN-COLOR-P02,0.39,0.2,0.61,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed
+syn-color-3,rgb/nonradiometric_color_only.png,panel,SYN-COLOR-P03,0.7,0.2,0.92,0.8,1280,840,2026-10-28T00:00:00+00:00,confirmed

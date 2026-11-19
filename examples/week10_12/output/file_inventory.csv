@@ -1,0 +1,10 @@
+kind,path,status,format,width,height,capture_time_raw,gps_latitude,gps_longitude,camera_make,camera_model,temperature_status,row_count,columns,size_bytes,sha256,missing_fields,error
+rgb,rgb/nonradiometric_color_only.png,warning,PNG,1280,840,,,,,,,,,6394,c50cb69c925cb650afc914150eec243f67517f710093ca1a92343bb96b3edc45,capture_timestamp; gps; camera_model,
+rgb,rgb/synthetic_case_01.png,warning,PNG,1280,840,,,,,,,,,6394,c50cb69c925cb650afc914150eec243f67517f710093ca1a92343bb96b3edc45,capture_timestamp; gps; camera_model,
+rgb,rgb/synthetic_case_02.png,warning,PNG,1280,840,,,,,,,,,6394,c50cb69c925cb650afc914150eec243f67517f710093ca1a92343bb96b3edc45,capture_timestamp; gps; camera_model,
+rgb,rgb/synthetic_case_03.png,warning,PNG,1280,840,,,,,,,,,6394,c50cb69c925cb650afc914150eec243f67517f710093ca1a92343bb96b3edc45,capture_timestamp; gps; camera_model,
+thermal,thermal/nonradiometric_color_only.png,warning,PNG,1280,840,,,,,,not_checked,,,5151,6e5b695bb62f581b10a50e65f252d2fab7ac1f0f3f7bf92d28519f95d647e0a7,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_case_01.png,warning,PNG,1280,840,,,,,,not_checked,,,22193,fea3ace4f1dce523ece9fbc27c8c4b4cbd383bed3935f385083de7386ccd07c9,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_case_02.png,warning,PNG,1280,840,,,,,,not_checked,,,25256,aebfe2a4c2720c1b9995b41ea665e639ef5cd680712050728b02ad7f50951b98,capture_timestamp; gps; camera_model,
+thermal,thermal/synthetic_case_03.png,warning,PNG,1280,840,,,,,,not_checked,,,22371,8fbfd64532f54e9d84ac8c84484eb5177766ccea8398655a20288f82196d32f0,capture_timestamp; gps; camera_model,
+scada,scada/synthetic_inverter.csv,ok,,,,,,,,,,5,timestamp_utc; inverter_id; power_kw; irradiance_w_m2,262,6a8f3838502279f5b67267971063b01b53b74515694a785b944f1c7283042f51,,

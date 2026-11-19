@@ -1,0 +1,15 @@
+{
+  "source": "output/panel_annotations.csv",
+  "saved_labels": 22,
+  "panel_labels": 21,
+  "row_labels": 1,
+  "labels_by_image": {
+    "rgb/synthetic_panel_array.png": 20,
+    "rgb/synthetic_panel_array_closeup.png": 1,
+    "rgb/synthetic_panel_array_rows.png": 1
+  },
+  "unique_annotation_ids": true,
+  "image_dimensions_match": true,
+  "all_fields_identical_after_save_reload": true,
+  "synthetic_example": true
+}

@@ -16,7 +16,9 @@ from PIL import Image
 IMAGE_ROLES = ("rgb", "thermal")
 INVENTORY_FIELDS = (
     "kind", "path", "status", "format", "width", "height", "capture_time_raw",
-    "gps_latitude", "gps_longitude", "camera_make", "camera_model",
+    "gps_latitude", "gps_longitude", "gps_datum_raw", "coordinate_reference_system",
+    "altitude_m", "camera_pose", "calibration_status", "rtk_status",
+    "camera_make", "camera_model",
     "temperature_status", "row_count", "columns", "size_bytes", "sha256",
     "missing_fields", "error",
 )
@@ -104,6 +106,12 @@ def _scan_image(path: Path, root: Path, role: str) -> dict[str, Any]:
         "capture_time_raw": None,
         "gps_latitude": None,
         "gps_longitude": None,
+        "gps_datum_raw": None,
+        "coordinate_reference_system": None,
+        "altitude_m": None,
+        "camera_pose": None,
+        "calibration_status": None,
+        "rtk_status": None,
         "camera_make": None,
         "camera_model": None,
         "temperature_status": "not_checked" if role == "thermal" else None,
@@ -124,6 +132,11 @@ def _scan_image(path: Path, root: Path, role: str) -> dict[str, Any]:
             record["camera_make"] = str(exif.get(271)) if exif.get(271) else None
             record["camera_model"] = str(exif.get(272)) if exif.get(272) else None
             record["gps_latitude"], record["gps_longitude"] = _read_gps(exif)
+            try:
+                gps_ifd = exif.get_ifd(34853) if exif else {}
+                record["gps_datum_raw"] = str(gps_ifd.get(18)) if gps_ifd.get(18) else None
+            except (KeyError, TypeError, ValueError):
+                pass
             image.load()
         if not record["capture_time_raw"]:
             record["missing_fields"].append("capture_timestamp")
@@ -137,6 +150,15 @@ def _scan_image(path: Path, root: Path, role: str) -> dict[str, Any]:
         record["status"] = "error"
         record["error"] = f"{type(exc).__name__}: {exc}"
     return record
+
+
+def scan_image(path: Path, inspection_root: Path, role: str) -> dict[str, Any]:
+    """Read one source image's metadata without altering the original file."""
+    root = Path(inspection_root).resolve()
+    source = Path(path).resolve()
+    if role not in IMAGE_ROLES or not source.is_relative_to(root):
+        raise ValueError("Image must be inside the inspection folder with a valid role")
+    return _scan_image(source, root, role)
 
 
 def _scan_scada(path: Path, root: Path) -> dict[str, Any]:
@@ -154,7 +176,9 @@ def _scan_scada(path: Path, root: Path) -> dict[str, Any]:
         record["columns"] = [str(column) for column in table.columns]
         record["row_count"] = len(table)
         record["empty_cells"] = {
-            column: int(table[column].str.strip().eq("").sum())
+            column: int(table[column].str.strip().str.lower().isin(
+                {"", "null", "undefined", "nan", "none"}
+            ).sum())
             for column in table.columns
         }
         record["preview_rows"] = table.head(3).to_dict(orient="records")
@@ -163,6 +187,8 @@ def _scan_scada(path: Path, root: Path) -> dict[str, Any]:
             record["missing_fields"].append("timestamp_column")
         if table.empty:
             record["missing_fields"].append("data_rows")
+        if any(record["empty_cells"].values()):
+            record["missing_fields"].append("missing_values")
         if record["missing_fields"]:
             record["status"] = "warning"
     except Exception as exc:
